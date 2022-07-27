@@ -47,10 +47,10 @@ Since Kubernetes is open-source there are about a dozen different distributions 
 
 ### Why is it important
 
-What’s in it?
+### What’s in it?
 
-How are all K8s not equal?
+## How are all K8s not equal?
 
-Rancher - Secure by default
+## Rancher - Secure by default
 
-A look ahead/endcap
+## A look ahead/endcap
