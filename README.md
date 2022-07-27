@@ -12,7 +12,7 @@ author: Andy Clemenko, @clemenko, andy.clemenko@rancherfederal.com
 
 ![logo](img/nsa_banner.jpg)
 
-At a high level, [NSA](https://www.nsa.gov/) and [DISA](https://disa.mil/) developed a Kubernetes hardening [guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide
+At a high level, [NSA](https://www.nsa.gov/) and [CISA](https://www.cisa.gov) developed a Kubernetes hardening [guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide
 ).
 
 > NSA and CISA developed this document in furtherance of their respective cybersecurity missions, including their responsibilities to develop and issue cybersecurity specifications and mitigations. This information may be shared broadly to reach all appropriate stakeholders.
