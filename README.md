@@ -60,7 +60,7 @@ The guide does a great job showing technical examples for a lot of the topics. A
 
 ## Rancher - Secure by default
 
-![rke2 logo](img/logo-horizontal-rke.svg)
+![rke2 logo](img/rke2.png)
 
 What makes Rancher and RKE2 different is the approach towards security. RKE2 was specifically designed around the needs for the federal government. Check out Rancher Government's [Security page](https://ranchergovernment.com/security). We list the current and upcoming STIGs for the Rancher and RKE2.
 
