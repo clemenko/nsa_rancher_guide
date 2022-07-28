@@ -62,7 +62,15 @@ The guide does a great job showing technical examples for a lot of the topics. A
 
 ![rke2 logo](img/rke2.png)
 
-What makes Rancher and RKE2 different is the approach towards security. RKE2 was specifically designed around the needs for the federal government. Check out Rancher Government's [Security page](https://ranchergovernment.com/security). We list the current and upcoming STIGs for the Rancher and RKE2.
+What makes Rancher and RKE2 different is the approach towards security. RKE2 is a fully conformant Kubernetes distribution that focuses on security and compliance within the U.S. Federal Government sector. To meet these goals, RKE2 does the following:
+
+* Provides [defaults and configuration options](https://docs.rke2.io/security/hardening_guide/) that allow clusters to pass the [CIS Kubernetes Benchmark v1.6](https://docs.rke2.io/security/cis_self_assessment16/)
+* Enables [FIPS 140-2 compliance](https://docs.rke2.io/security/fips_support/)
+* Regularly scans components for CVEs using [trivy](https://github.com/aquasecurity/trivy) in our build pipeline
+
+Rancher, as a product, builds on top of RKE2 foundation adding manageability for downstream clusters. The Rancher Management layer also provides a central authentication and authorization management. Rancher also provide a single pain of glass for GitOPs and virtual machines.
+
+For more information about the STIGS please check out Rancher Government's [Security page](https://ranchergovernment.com/security). We list the current and upcoming STIGs/CIS Benchmarks for the Rancher/RKE2.
 
 ### Key points from the Guide
 
