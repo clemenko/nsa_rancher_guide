@@ -1,10 +1,5 @@
-
-https://www.armosec.io/blog/nsa-cisa-kubernetes-hardening-guide/
-
-
-
 ---
-title: Taking Advantage of Encryption at Rest with Longhorn
+title: How the NSA Kubernetes Hardening guide applies to Rancher and RKE2
 author: Andy Clemenko, @clemenko, andy.clemenko@rancherfederal.com
 ---
 
@@ -26,7 +21,9 @@ This article will help apply the recommendations to Rancher and RKE2 (Ranchers G
 > * [What is the NSA Kubernetes Hardening Guide](#What-is-the-NSA-Kubernetes-Hardening-Guide)
 >   * [Why is it important](#Why-is-it-important)
 >   * [What’s in it](#What’s-in-it)
-> * [What is the NSA Kubernetes Hardening Guide](#What-is-the-NSA-Kubernetes-Hardening-Guide)
+> * [How are all K8s not equal](#How-are-all-K8s-not-equal)
+> * [Rancher - Secure by default](#Rancher---Secure-by-default)  
+
 ---
 
 ## What is the NSA Kubernetes Hardening Guide
@@ -41,14 +38,31 @@ The guide is designed as minimum standard for hardening Kubernetes against some 
 
 ### Why is it important
 
-Throughout my career there has always been a disconnect between the documentation and the practical implementation. The Kubernetes ecosystem is no stranger to this problem. Since Kubernetes is open-source there are about a dozen different distributions. Each distribution makes strategic decisions on the deployment details. Some vendors make good choices. Some vendors make bad choices. [Kubernetes Hardening guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide) is intended to bridge the gap from the initial install to a hardened, secure Kubernetes cluster.
+Throughout my career there has always been a disconnect between the documentation and the practical implementation. The Kubernetes ecosystem is no stranger to this problem. Since Kubernetes is open-source there are about a dozen different distributions. Each distribution makes strategic decisions on the deployment details. Some vendors make good choices. Some vendors make bad choices. [Kubernetes Hardening guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide) is intended to bridge the gap from the initial install to a hardened, secure Kubernetes cluster. It is important to have a guide like this when the advisory never quits.
 
 ### What’s in it
 
+The guide covers the topics from a couple of major catagories.
 
+* Kubernetes Pod Policy
+* Network Separation and Hardening
+* Authentication and Authorization
+* Audit Logging and Threat Detection
+* Upgrading and Application Security Practices
 
-## How are all K8s not equal?
+![rke2 logo](img/examples.jpg)
+
+The guide does a great job showing technical examples for a lot of the topics. Again providing a strong, secure technical foundation.
+
+## How are all K8s not equal
+
+[Kubernetes](https://kubernetes.io/) is open source and free to use by anyone. This is good and bad. Take a look at the [vendor list](https://kubernetes.io/partners/#conformance). However Kubernetes has a slight complexity problem. When vendors take the underlying code and package it they make trade offs. Some vendors lean towards having a complete experience at the cost of security. Some lean towards lock-in of an entire ecosystem. One vendor builds additional object types on top of Kubernetes. Meaning it is very difficult to change distributions. Rancher, and RKE2, lean towards security.
 
 ## Rancher - Secure by default
 
-## A look ahead/endcap
+![rke2 logo](img/logo-horizontal-rke.svg)
+
+What makes Rancher and RKE2 different is the approach towards security. RKE2 was specifically designed around the needs for the federal government. Check out Rancher Government's [Security page](https://ranchergovernment.com/security). We list the current and upcoming STIGs for the Rancher and RKE2.
+
+### Key points from the Guide
+
