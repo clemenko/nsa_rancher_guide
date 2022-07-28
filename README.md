@@ -23,31 +23,29 @@ This article will help apply the recommendations to Rancher and RKE2 (Ranchers G
 
 > **Table of Contents**:
 >
-> * [Whoami](#whoami)
-> * [Prerequisites](#prerequisites)
-> * [Linux Servers and Kubernetes](#linux-servers-and-kubernetes)
-
+> * [What is the NSA Kubernetes Hardening Guide](#What-is-the-NSA-Kubernetes-Hardening-Guide)
+>   * [Why is it important](#Why-is-it-important)
+>   * [What’s in it](#What’s-in-it)
+> * [What is the NSA Kubernetes Hardening Guide](#What-is-the-NSA-Kubernetes-Hardening-Guide)
 ---
 
 ## What is the NSA Kubernetes Hardening Guide
 
-In March of 2022 the [NSA](https://www.nsa.gov/) released an updated version of the hardening [guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide
-). We should probably level set a little on what Kubernetes is. From the guide itself.
+In March of 2022 the [NSA](https://www.nsa.gov/) released an updated version of the hardening the [Kubernetes Hardening guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide). We should probably level set a little on what Kubernetes is. From the guide itself.
+
 > Kubernetes® is an open-source system that automates the deployment, scaling, and management of applications run in containers, and is often hosted in a cloud environment.
-Since Kubernetes is open-source there are about a dozen different distributions for it. 
 
+The guide is designed as minimum standard for hardening Kubernetes against some common attack vectors. Namely supply chain, malicious threat actors and insider threats. The guide covers the best practices for prevent such attacks. The executive summary from the [guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide) does a good job explaining it.
 
-
-
-
-
-
-
-
+> This guide describes the security challenges associated with setting up and securing a Kubernetes cluster. It includes strategies for system administrators and developers of National Security Systems, helping them avoid common misconfigurations and implement recommended hardening measures and mitigations when deploying Kubernetes.
 
 ### Why is it important
 
-### What’s in it?
+Throughout my career there has always been a disconnect between the documentation and the practical implementation. The Kubernetes ecosystem is no stranger to this problem. Since Kubernetes is open-source there are about a dozen different distributions. Each distribution makes strategic decisions on the deployment details. Some vendors make good choices. Some vendors make bad choices. [Kubernetes Hardening guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide) is intended to bridge the gap from the initial install to a hardened, secure Kubernetes cluster.
+
+### What’s in it
+
+
 
 ## How are all K8s not equal?
 
