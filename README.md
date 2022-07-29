@@ -49,7 +49,7 @@ Meaning, had the guide been available the system administrators, hopefully, woul
 
 ### What’s in it
 
-The guide covers the topics from a couple of major catagories.
+The guide covers the topics from a couple of major categories.
 
 * Kubernetes Pod Policy
 * Network Separation and Hardening
@@ -57,13 +57,13 @@ The guide covers the topics from a couple of major catagories.
 * Audit Logging and Threat Detection
 * Upgrading and Application Security Practices
 
-![rke2 logo](img/examples.jpg)
-
 The guide does a great job showing technical examples for a lot of the topics. Again providing a strong, secure technical foundation. In this article we are not going to go too deep. Please check out the [Key Points](#Key-points-from-the-Guide) section for more technical information.
+
+![rke2 logo](img/examples.jpg)
 
 ## How are all Kubernetes not equal
 
-[Kubernetes](https://kubernetes.io/) is open source and free to use by anyone. This is good and bad. Take a look at the [vendor list](https://kubernetes.io/partners/#conformance). However Kubernetes has a slight complexity problem. When vendors take the underlying code and package it they make trade offs. Some vendors lean towards having a complete experience at the cost of security. Some lean towards lock-in of an entire ecosystem. One vendor builds additional object types on top of Kubernetes. Meaning it is very difficult to change distributions if you rely on that object. Rancher, and RKE2, leans toward security. So really, what makes Rancher and RKE2 different?
+[Kubernetes](https://kubernetes.io/) is open source and free to use by anyone. This is good and bad. Take a look at the [vendor list](https://kubernetes.io/partners/#conformance). However Kubernetes has a slight complexity problem. When vendors take the underlying code and package it they make tradeoffs. Some vendors lean towards having a complete experience at the cost of security. Some lean towards lock-in of an entire ecosystem. One vendor builds additional object types on top of Kubernetes. Meaning it is very difficult to change distributions if you rely on that object. Rancher, and RKE2, leans toward security. So really, what makes Rancher and RKE2 different?
 
 ![rke2 logo](img/confused.jpg)
 
@@ -95,7 +95,7 @@ This section talks more about building secure images, rootless containers, and t
 
     RKE2 uses Canal as the default. However there are several to choose from "none, calico, canal, cilium; optionally with multus". Picking the best CNI that fits your environment is important.
 
-    >“Canal” is a shorthand for saying “Calico and Flannel”, a common practise which sets up Calico to handle policy management and Flannel to manage the network itself. This combination brings in Calico’s support for the NetworkPolicy feature of Kubernetes, while utilizing Flannel’s UDP-based network traffic to provide for an easier setup experience that works in a wider variety of host network environments without special configuration. - https://ubuntu.com/kubernetes/docs/cni-canal
+    >“Canal” is a shorthand for saying “Calico and Flannel”, a common practice which sets up Calico to handle policy management and Flannel to manage the network itself. This combination brings in Calico’s support for the NetworkPolicy feature of Kubernetes, while utilizing Flannel’s UDP-based network traffic to provide for an easier setup experience that works in a wider variety of host network environments without special configuration. - https://ubuntu.com/kubernetes/docs/cni-canal
 
 2. >Secure the control plane.
 
@@ -124,6 +124,8 @@ Neuvector stands above other products on the market with it's ability to activel
 The key point about section is to ensure that all the components are upgraded in a timely manor. Similar to how [Equifax](https://arstechnica.com/information-technology/2017/09/massive-equifax-breach-caused-by-failure-to-patch-two-month-old-bug/) didn't patch Apache Struts. All of our infrastructure needs to be updated. RKE2 helps with this by providing simple [installation methods](https://docs.rke2.io/install/methods/). In turn, this makes keeping the cluster updated very easy and automatable. Rancher has similar deployment strategies. Rancher also includes a Continuous Delivery (CD) tool built in called [Fleet](https://fleet.rancher.io/). At a high level, Fleet allows a team apply GitOPs methods to managing application's lifecycle. Simply put, use Git to push updates to the applications being deployed. Also known as Infrastructure as Code.
 
 ## What did we learn
+
+![rke2 logo](img/rke_rancher.jpg)
 
 There is a lot of valuable information within the guide itself. The are other great resources for specific implementation of similar recommends. Specifically looking at the STIGs and the CIS benchmarks. Rancher Government's [Security](https://ranchergovernment.com/security) page had more information about those guides/benchmarks.
 
