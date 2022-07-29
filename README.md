@@ -28,6 +28,7 @@ This article will help identify the recommendations pertinent to [Rancher](https
 >   * [Authentication and Authorization](#Authentication-and-Authorization)
 >   * [Audit Logging and Threat Detection](#Audit-Logging-and-Threat-Detection)
 >   * [Upgrading and Application Security Practices](#Upgrading-and-Application-Security-Practices)
+> * [What did we learn](#What-did-we-learn)
 
 ---
 
@@ -120,3 +121,12 @@ Neuvector stands above other products on the market with it's ability to activel
 
 ### Upgrading and Application Security Practices
 
+The key point about section is to ensure that all the components are upgraded in a timely manor. Similar to how [Equifax](https://arstechnica.com/information-technology/2017/09/massive-equifax-breach-caused-by-failure-to-patch-two-month-old-bug/) didn't patch Apache Struts. All of our infrastructure needs to be updated. RKE2 helps with this by providing simple [installation methods](https://docs.rke2.io/install/methods/). In turn, this makes keeping the cluster updated very easy and automatable. Rancher has similar deployment strategies. Rancher also includes a Continuous Delivery (CD) tool built in called [Fleet](https://fleet.rancher.io/). At a high level, Fleet allows a team apply GitOPs methods to managing application's lifecycle. Simply put, use Git to push updates to the applications being deployed. Also known as Infrastructure as Code.
+
+## What did we learn
+
+There is a lot of valuable information within the guide itself. The are other great resources for specific implementation of similar recommends. Specifically looking at the STIGs and the CIS benchmarks. Rancher Government's [Security](https://ranchergovernment.com/security) page had more information about those guides/benchmarks.
+
+Another major take away is that these guides are also being updated. Please make sure to keep current on the latest code AND guides.
+
+Hope this helped in demystifying the hardening guide. As well as applying it to Rancher and RKE2.
