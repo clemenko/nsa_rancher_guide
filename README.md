@@ -20,7 +20,7 @@ This article will help identify the recommendations pertinent to [Rancher](https
 > * [What is the NSA Kubernetes Hardening Guide](#What-is-the-NSA-Kubernetes-Hardening-Guide)
 >   * [Why is it important](#Why-is-it-important)
 >   * [What’s in it](#What’s-in-it)
-> * [How are all K8s not equal](#How-are-all-K8s-not-equal)
+> * [How are all Kubernetes not equal](#How-are-all-Kubernetes-not-equal)
 > * [Rancher - Secure by default](#Rancher---Secure-by-default)
 > * [Key points from the Guide](#Key-points-from-the-Guide)
 >   * [Kubernetes Pod Policy](#Kubernetes-Pod-Policy)
@@ -61,7 +61,7 @@ The guide covers the topics from a couple of major catagories.
 
 The guide does a great job showing technical examples for a lot of the topics. Again providing a strong, secure technical foundation. In this article we are not going to go too deep. Please check out the [Key Points](#Key-points-from-the-Guide) section for more technical information.
 
-## How are all K8s not equal
+## How are all Kubernetes not equal
 
 [Kubernetes](https://kubernetes.io/) is open source and free to use by anyone. This is good and bad. Take a look at the [vendor list](https://kubernetes.io/partners/#conformance). However Kubernetes has a slight complexity problem. When vendors take the underlying code and package it they make trade offs. Some vendors lean towards having a complete experience at the cost of security. Some lean towards lock-in of an entire ecosystem. One vendor builds additional object types on top of Kubernetes. Meaning it is very difficult to change distributions if you rely on that object. Rancher, and RKE2, leans toward security. So really, what makes Rancher and RKE2 different?
 
