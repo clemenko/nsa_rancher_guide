@@ -7,8 +7,7 @@ author: Andy Clemenko, @clemenko, andy.clemenko@rancherfederal.com
 
 ![logo](img/nsa_banner.jpg)
 
-Being a System Administrator over the last 20 years has been fun. For the longest time there was no real technical validation for systems. [STIGs](https://ncp.nist.gov/repository) and the [CIS benchmarks](https://www.cisecurity.org/cis-benchmarks/) have greatly helped. But it doesn't help with the regards to the big picture. Thanks to [NSA](https://www.nsa.gov/) and [CISA](https://www.cisa.gov) for developing a Kubernetes hardening [guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide
-).
+Being a System Administrator over the last 20 years has been fun. For the longest time there was no real technical validation for systems. Especially when it comes to security. [STIGs](https://ncp.nist.gov/repository) and the [CIS benchmarks](https://www.cisecurity.org/cis-benchmarks/) have greatly helped in recent years. But it doesn't help with regards to the big picture concepts. Thanks to [NSA](https://www.nsa.gov/) and [CISA](https://www.cisa.gov) for developing the Kubernetes hardening [guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide). The hardening guide is a great tool for creating a secure strategy for any Kubernetes deployment.
 
 > NSA and CISA developed this document in furtherance of their respective cybersecurity missions, including their responsibilities to develop and issue cybersecurity specifications and mitigations. This information may be shared broadly to reach all appropriate stakeholders.
 
